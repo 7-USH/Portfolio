@@ -229,8 +229,7 @@ class _MySkillsState extends State<MySkills> {
                     SizedBox(height: size.height * 0.03),
                     _buildEducation(),
                     SizedBox(height: size.height * 0.03),
-                    _buildSkillsList(context,
-                        headingFontSize: size.width * 0.26),
+                    _buildSkillsList(context),
                   ],
                 ),
                 SizedBox(height: size.height * 0.10),
@@ -279,7 +278,7 @@ class _MySkillsState extends State<MySkills> {
   }
 
   Widget _buildSkillsList(BuildContext context,
-      {required double headingFontSize}) {
+      { double? headingFontSize}) {
     final List<Widget> widgets = Strings.skillsList
         .map((skill) => Padding(
               padding: const EdgeInsets.only(right: 8.0),

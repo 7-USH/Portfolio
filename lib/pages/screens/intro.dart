@@ -279,11 +279,6 @@ class _IntroState extends State<Intro> {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        const Icon(
-          Icons.cookie,
-          size: 40,
-          color: Colors.white,
-        ),
         const SizedBox(
           width: 12.0,
         ),
@@ -291,7 +286,7 @@ class _IntroState extends State<Intro> {
           text: TextSpan(
               children: [
                 TextSpan(
-                    text: Strings.this_web,
+                    text: '🍪 ${ Strings.this_web}',
                     style: screenText(
                         size: 12,
                         color: bgTextColor2,

@@ -27,7 +27,7 @@ class Strings {
   static const String headline =
       'I\'am Tushar Mali, Flutter App Developer from Mumbai, India';
   static const String summary =
-      'Focused professional having excellent technical and communication skills, and offering 6 years of experience in Computer industry. Proficient at designing and formulating test automation frameworks, writing code in various languages, feature development and implementation. Specialize in thinking outside the box to find unique solutions to difficult engineering problems.';
+      'I\'m a Second year student Studying at Veermata Jijabai Technological Institute, Mumbai. Proficient at designing and building flutter apps, writing code in various languages, feature development and implementation. Specialize in thinking outside the box to find unique solutions to difficult engineering problems.';
 
   // skills:--------------------------------------------------------------------
   static const String skills = 'Sk_\nills';

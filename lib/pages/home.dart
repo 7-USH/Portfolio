@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
                 _buildBody(context, constraints),
                 _buildMadeWith(
                     alignment: ResponsiveLayout.isSmallScreen(context)
-                        ? Alignment.topRight
+                        ? Alignment.topLeft
                         : Alignment.bottomLeft),
                 isSmall ? const SizedBox.shrink() : _buildSocialButtons(),
               ],
@@ -82,6 +82,7 @@ class _HomePageState extends State<HomePage> {
       alignment: alignment,
       child: Wrap(
         crossAxisAlignment: WrapCrossAlignment.center,
+        spacing: 20,
         direction: axis,
         children: <Widget>[
           _buildMenuItem(

@@ -14,18 +14,16 @@ class HoverButton extends StatefulWidget {
 class _HoverButtonState extends State<HoverButton> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 20),
-      child: OnHover(builder: (isHovered) {
-        final color = isHovered ? Colors.blue : Colors.white70;
-        return Text(
-          widget.text,
-          style: screenText(
-              color: color,
-              weight: isHovered ? FontWeight.bold : FontWeight.normal,
-              size: 18),
-        );
-      }),
-    );
+    // ignore: avoid_unnecessary_containers
+    return OnHover(builder: (isHovered) {
+      final color = isHovered ? Colors.blue : Colors.white70;
+      return Text(
+        widget.text,
+        style: screenText(
+            color: color,
+            weight: isHovered ? FontWeight.bold : FontWeight.normal,
+            size: 15),
+      );
+    });
   }
 }

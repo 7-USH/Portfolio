@@ -9,7 +9,7 @@ import 'package:my_portfolio/models/teaches.dart';
 import 'package:my_portfolio/widgets/circle.dart';
 
 class MySkills extends StatefulWidget {
-  const  MySkills({Key? key}) : super(key: key);
+  const MySkills({Key? key}) : super(key: key);
 
   @override
   State<MySkills> createState() => _MySkillsState();
@@ -93,7 +93,7 @@ class _MySkillsState extends State<MySkills> {
                         _buildSkillsList(context,
                             headingFontSize: size.width * 0.012),
                         SizedBox(height: size.height * 0.03),
-                        _buildEducation( size.width * 0.012),
+                        _buildEducation(headingFontSize: size.width * 0.012),
                       ],
                     ),
                   ),
@@ -177,7 +177,7 @@ class _MySkillsState extends State<MySkills> {
                   _buildSkillsList(context,
                       headingFontSize: size.width * 0.022),
                   SizedBox(height: size.height * 0.03),
-                  _buildEducation(size.width * 0.022),
+                  _buildEducation(headingFontSize : size.width * 0.022),
                 ],
               ),
             ),
@@ -226,8 +226,8 @@ class _MySkillsState extends State<MySkills> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     _buildSkills(size: size.width * 0.23),
-                    SizedBox(height: MediaQuery.of(context).size.height * 0.03),
-                    _buildEducation(size.width * 0.30),
+                    SizedBox(height: size.height * 0.03),
+                    _buildEducation(),
                     SizedBox(height: size.height * 0.03),
                     _buildSkillsList(context,
                         headingFontSize: size.width * 0.26),
@@ -293,14 +293,12 @@ class _MySkillsState extends State<MySkills> {
       children: <Widget>[
         _buildSkillsContainerHeading(headingFontSize),
         const SizedBox(height: 8.0),
-        Wrap(
-          runSpacing: 10,
-          children: widgets),
+        Wrap(runSpacing: 10, children: widgets),
       ],
     );
   }
 
-  Widget _buildSkillsContainerHeading( double? fontSize) {
+  Widget _buildSkillsContainerHeading(double? fontSize) {
     return Text(
       Strings.skills_i_have,
       style: screenText(
@@ -323,7 +321,7 @@ class _MySkillsState extends State<MySkills> {
     );
   }
 
-  Widget _buildEducation(double? headingFontSize) {
+  Widget _buildEducation({double? headingFontSize}) {
     return Column(
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -332,7 +330,7 @@ class _MySkillsState extends State<MySkills> {
         const SizedBox(height: 8.0),
         _buildEducationSummary(),
         const SizedBox(height: 8.0),
-        _buildEducationTimeline( headingFontSize)
+        _buildEducationTimeline(headingFontSize)
       ],
     );
   }

@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
                 _buildBody(context, constraints),
                 _buildMadeWith(
                     alignment: ResponsiveLayout.isSmallScreen(context)
-                        ? Alignment.topLeft
+                        ? Alignment.bottomLeft
                         : Alignment.bottomLeft),
                 isSmall ? const SizedBox.shrink() : _buildSocialButtons(),
               ],

@@ -80,7 +80,7 @@ class Strings {
   static const String menu_facebook = 'Facebook';
   static const String menu_twitter = 'Twitter';
   static const String menu_linked_in = 'Linkedin';
-  static const String menu_github = 'Gihtub';
+  static const String menu_github = 'Github';
   static const String menu_mail = 'Mail';
   static const String menu_insta = 'Instagram';
 

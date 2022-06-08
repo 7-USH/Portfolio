@@ -10,7 +10,7 @@ class Strings {
   static const String this_web = 'Yes this website uses ';
   static const String cookies = 'cookies';
   static const String in_flutter = 'in flutter';
-  static const String heart = ' ❤ ';
+  static const String heart = ' 🖤 ';
   static const String made_with = 'Made with';
 
   // intro:---------------------------------------------------------------------
